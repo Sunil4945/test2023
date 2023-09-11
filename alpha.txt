@@ -1,0 +1,26 @@
+sunil sunil muraganur sunil muraganur 
+#include<stdlib.h>
+#include<math.h>
+void main()
+{
+char hexa[10];
+int decimal=0,i=0,j=0,len=0;
+printf("Enter a hexadecimal number");
+scanf("%s",&hexa);
+len=strlen(hexa);
+for(i=len-1; i>=0; i--)
+{
+   if(hexa[i]>='0' && hexa[i]<='9')
+{
+   decimal =decimal+(hexa[i]-48)*pow(16,j);
+    j++;
+}
+else if(hexa[i]>='A' && hexa[i]<='F')
+{ 
+       decimal =decimal+(hexa[i]-55)*pow(16,j);
+       j++;
+}
+}
+printf("decimal number:%d\n %d",decimal,hexa);
+}
+
