@@ -5,4 +5,5 @@ void main()
 	int b=20;
 	int sum=a+b;
 	printf("sum=%d",sum);
+	printf("Hello World");
 }
